@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- viewport meta to reset iPhone inital scale -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欢迎用户留言</title>
+<!-- css3-mediaqueries.js for IE8 or older -->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<style type="text/css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;}
+body{font:1em "Microsoft Yahei","微软雅黑", Verdana,Tahoma,sans-serif;line-height: 150%;color: #404040;}
+ul,ol{list-style:none;}
+a {
+	text-decoration: none;
+	outline: none;
+	blr: expression(this.onFocus=this.blur());
+	transition: color 0.2s ease 0s;
+	color:#404040;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style-type: none;
+}
+
+address, caption, cite, code, dfn, em, var {
+	font-style: normal;
+	font-weight: normal;
+}
+img, object { width: 100%;max-width: 100%;-ms-interpolation-mode: bicubic;}
+
+.user_center_rtbox { background:#FFF; border: 1px solid #D7D7D7; width:930px; padding:0 15px; margin:20px auto; overflow:hidden}
+.leave_msg_h3 {
+  border-bottom: 1px solid #F6F1DC;
+  color: #333;
+  display:block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+
+.msg_prompt {
+  overflow: hidden;
+}
+.msg_prompt .msg_content {
+  background: none repeat scroll 0 0 #FFFBEC;
+  color: #666666;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 7px 15px;
+}
+.msg_prompt b {
+  background: url(images/shopping_lighticn.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+  float: left;
+  height: 30px;
+  margin: 0 5px 0 0;
+  width: 18px;
+}
+
+.user_center_rtbox .userInfo_box {
+  margin: 10px 0;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.userInfo_box .tag_bx_table_nbr {
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.tag_bx_table_nbr table {
+  border-collapse: collapse;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 100;
+  width: 100%;
+}
+.tag_bx_table_nbr table td {
+  height: 35px;
+  line-height: 35px;
+}
+.tag_bx_table_nbr table td.txt_rgt {
+  padding-right:3px;
+  text-align: right;
+}
+.tag_bx_table_nbr table td.txt_lf {
+  padding-left:3px;
+  text-align: left;
+}
+.userInfo_box input[type="text"], .userInfo_box input[type="password"] {
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  height: 1.5em;
+  line-height: 1.5;
+  outline: 0 none;
+  padding: 5px;
+}
+
+.userInfo_box .Big_blue_sml {
+  border: 1px solid #CCCCCC;
+  color: #666666;
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 5px;
+  resize: vertical;
+  width: 80%;
+}
+
+.userInfo_box .find_pwd_next {
+  background:#ed145b; border-radius: 3px;border: 1px solid #ed145b;
+  border: 0 none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font: 100 12px/30px "Microsoft YaHei",'微软雅黑';
+  height: 30px;
+  text-align: center;
+  width: 100px;
+}
+
+/*清浮动*/
+.clearfixC:after{content:"";display:block;clear:both;}
+.clearfixC{zoom:1;}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+.user_center_rtbox {
+width: 95%;background:#FFF;
+border: 0 none; padding:0 2px; margin:2px auto;
+}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+h3 {
+font-size: 0.75em;
+}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="user_center_rtbox clearfixC"> 
+   <h3 class="leave_msg_h3 clearfixC">人工客服</h3> 
+   <div class="msg_prompt clearfixC"> 
+    <div class="msg_content">
+     <b></b>感谢您对我们工作的理解和支持！您提出的宝贵意见，我们会在9:00至23:00及时查阅和回复。
+    </div> 
+   </div> 
+   <div class="userInfo_box"> 
+    <div class="tag_bx_table_nbr"> 
+     <table border="0" cellspacing="0" cellpadding="0"> 
+      <tbody>
+       <tr> 
+        <td class="txt_rgt" width="25%">姓名：</td> 
+        <td class="txt_lf" width="75%"><input name="" type="text" class="inputBg" maxlength="80"  width="80%" /></td> 
+       </tr>
+       <tr> 
+        <td class="txt_rgt">性别：</td> 
+        <td class="txt_lf"><input type="radio" checked="checked" value="0" name="msg_type" /> 先生 <input type="radio" value="1" name="msg_type" /> 女士 </td> 
+       </tr> 
+	   <tr> 
+        <td class="txt_rgt">手机：</td> 
+        <td class="txt_lf"><input name="" type="text" class="inputBg" maxlength="80"  width="80%" /></td> 
+       </tr>
+       <tr> 
+        <td class="txt_rgt">留言：</td> 
+        <td class="txt_lf"><textarea class="Big_blue_sml" id="code" rows="5" cols="80" name="code"></textarea></td> 
+       </tr> 
+       <tr> 
+        <td class="txt_rgt"></td> 
+        <td class="txt_lf"><input type="button" class="find_pwd_next" value="我要留言" name="" /></td> 
+       </tr> 
+      </tbody>
+     </table> 
+    </div> 
+   </div> 
+  </div> 
+  
+</body>
+</html>
